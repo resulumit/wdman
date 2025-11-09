@@ -206,12 +206,7 @@ selenium_check_drivers <- function(chromever, geckover, phantomver,
     )
   }
   if (!is.null(phantomver)) {
-    phantomcheck <- phantom_check(verbose, check)
-    pver <- phantom_ver(phantomcheck[["platform"]], phantomver)
-    jvmargs[["phantom"]] <- sprintf(
-      "-Dphantomjs.binary.path=%s",
-      shQuote(pver[["path"]])
-    )
+warning("PhantomJS development is suspended; ignoring 'phantomver'.")
   }
   if (!is.null(iedrver)) {
     iecheck <- ie_check(verbose, check)
