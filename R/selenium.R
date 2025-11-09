@@ -54,6 +54,7 @@ selenium <- function(port = 4567L,
                      geckover = "latest",
                      iedrver = NULL,
                      phantomver = "2.1.1",
+                     phantomver = NULL, # PhantomJS development is suspended
                      check = TRUE,
                      verbose = TRUE,
                      retcommand = FALSE,
