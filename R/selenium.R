@@ -187,7 +187,7 @@ selenium_ver <- function(platform, version) {
   list(version = selver, dir = seldir, path = selpath)
 }
 
-selenium_check_drivers <- function(chromever, geckover, # phantomver,
+selenium_check_drivers <- function(chromever, geckover, phantomver,
                                    iedrver, check, verbose, jvmargs) {
   if (!is.null(chromever)) {
     chromecheck <- chrome_check(verbose, check)
